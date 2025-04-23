@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://topvpn2025.github.io/news/article-100656.htm" />
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>在定义C++, C通用接口函数时让C++接口支持默认参数</title>
+        <meta name="description" content="在SOUI4的开发中，所有SOUI核心对象都采用了一种类似COM接口的技术来导出接口。 这所以采用这种方案，主要目的是为了让SOUI4支持C语言调用，扩展SOUI的使用场景。 众所周知，C++函数的参" />
+        <link rel="icon" href="/assets/website/img/clash_verge/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="2025年最佳VPN 节点机场订阅中文站">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://topvpn2025.github.io/news/article-100656.htm" />
+    <meta property="og:site_name" content="2025年最佳VPN 节点机场订阅中文站" />
+    <meta property="og:title" content="在定义C++, C通用接口函数时让C++接口支持默认参数" />
+    <meta property="og:image" content="https://topvpn2025.github.io/uploads/20240802-1/38bcecd5d1ae0a6406f0afba0f92c408.webp" />
+        <meta property="og:release_date" content="2025-04-21T06:49:57" />
+    <meta property="og:updated_time" content="2025-04-21T06:49:57" />
+        <meta property="og:description" content="在SOUI4的开发中，所有SOUI核心对象都采用了一种类似COM接口的技术来导出接口。 这所以采用这种方案，主要目的是为了让SOUI4支持C语言调用，扩展SOUI的使用场景。 众所周知，C++函数的参" />
+        
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="在定义C++, C通用接口函数时让C++接口支持默认参数">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="/assets/website/js/frontend/clash_verge/aos/aos.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/clash_verge/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/clash_verge/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/clash_verge/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/clash_verge/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/clash_verge/remixicon/remixicon.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/clash_verge/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="/assets/website/css/clash_verge/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CEWZHDSTGV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CEWZHDSTGV');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+                        <a href="/"><span class="logo">2025年最佳VPN</span></a>
+                        
+            <nav id="navbar" class="navbar">
+                <ul>
+                                        <li><a class="nav-link" href="/">首页</a></li>
+                                        <li><a class="nav-link" href="/free-nodes/">免费节点</a></li>
+                                        <li><a class="nav-link" href="/paid-subscribe/">推荐机场</a></li>
+                                        <li><a class="nav-link" href="/news/">新闻资讯</a></li>
+                                        <li><a class="nav-link" href="/client.htm">客户端</a></li>
+                                    </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+        </div>
+    </header><!-- End Header -->
+    <main id="main">
+        <!-- ======= Breadcrumbs ======= -->
+        <section class="breadcrumbs">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h1>在定义C++, C通用接口函数时让C++接口支持默认参数</h1>
+                    <ol>
+                        <li><a href="/">首页</a></li>
+                        <li><a href="/news/">新闻资讯</a></li>
+                        <li>正文</li>
+                    </ol>
+                </div>
+            </div>
+        </section><!-- End Breadcrumbs -->
+        <!-- ======= About Video Section ======= -->
+        <section id="about-video" class="about-video">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                                        <input type="hidden" id="share-website-info" data-name="Clash Meta免费节点订阅站" data-url="https://clash-meta.github.io">
+                <div class="xcblog-blog-detail">
+                      				  				  				<p>在SOUI4的开发中，所有SOUI核心对象都采用了一种类似COM接口的技术来导出接口。</p> <p>这所以采用这种方案，主要目的是为了让SOUI4支持C语言调用，扩展SOUI的使用场景。</p> <p>众所周知，C++函数的参数支持配置默认值，但C函数是不支持默认值的。</p> <p>比如定义了类似下面一个接口</p> <div class="cnblogs_code"> <pre><span style="color: rgba(0, 128, 128, 1)">1</span><span style="color: rgba(0, 0, 255, 1)">#undef</span> INTERFACE<span style="color: rgba(0, 128, 128, 1)">2</span><span style="color: rgba(0, 0, 255, 1)">#define</span> INTERFACE IRenderTarget<span style="color: rgba(0, 128, 128, 1)">3</span><span style="color: rgba(0, 0, 0, 1)">DECLARE_INTERFACE_(IRenderTarget, IObjRef)</span><span style="color: rgba(0, 128, 128, 1)">4</span><span style="color: rgba(0, 0, 0, 1)">{</span><span style="color: rgba(0, 128, 128, 1)">5</span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">...</span><span style="color: rgba(0, 128, 128, 1)">6</span><span style="color: rgba(0, 0, 0, 1)">    STDMETHOD_(HRESULT, SelectObject)</span><span style="color: rgba(0, 128, 128, 1)">7</span>     (THIS_ IRenderObj * pObj, IRenderObj * *<span style="color: rgba(0, 0, 0, 1)">ppOldObj) PURE;</span><span style="color: rgba(0, 128, 128, 1)">8</span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">...</span><span style="color: rgba(0, 128, 128, 1)">9</span> };</pre> </div> <p>IRenderTarget::SelectObject方法的功能是给当前的RenderTarget选择一个绘图对象，同时如果ppOldObj不为NULL，则通过ppOldObj返回当前正在使用的同类型绘图对象。</p> <p>很多时候用户并不关心原来的对象，所以通常给它置为NULL即可。这也是SOUI3及之前版本的默认参数。</p> <p>由于4.0中，该接口可能是在C++中引用，也可能是在C中引用，如果还是直接使用C++的方法给它设置默认参数NULL，在C中引用就会导致编译失败。</p> <p>是由于这个方法是控件自绘中常用的方法，为了减少升级SOUI3的代码到SOUI4的难度，我一直在想有没有办法能够兼容两种语言的特性。</p> <p>今天无意中想起来可以用一个简单的宏解决。</p> <p>于是我定义了下面的宏：</p> <div class="cnblogs_code"> <pre><span style="color: rgba(0, 128, 128, 1)">1</span><span style="color: rgba(0, 0, 0, 1)">#ifdef __cplusplus</span><span style="color: rgba(0, 128, 128, 1)">2</span><span style="color: rgba(0, 0, 255, 1)">#define</span> DEF_VAL(x) =x<span style="color: rgba(0, 128, 128, 1)">3</span><span style="color: rgba(0, 0, 255, 1)">#else</span><span style="color: rgba(0, 128, 128, 1)">4</span><span style="color: rgba(0, 0, 255, 1)">#define</span> DEF_VAL(x)<span style="color: rgba(0, 128, 128, 1)">5</span><span style="color: rgba(0, 0, 255, 1)">#endif</span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">__cplusplus</span></pre> </div> <p>有了这个宏，我们就可以同时兼容C++和C语言了，上面的接口修改如下：</p> <div class="cnblogs_code"> <pre><span style="color: rgba(0, 128, 128, 1)">1</span><span style="color: rgba(0, 0, 255, 1)">#undef</span> INTERFACE<span style="color: rgba(0, 128, 128, 1)">2</span><span style="color: rgba(0, 0, 255, 1)">#define</span> INTERFACE IRenderTarget<span style="color: rgba(0, 128, 128, 1)">3</span><span style="color: rgba(0, 0, 0, 1)">DECLARE_INTERFACE_(IRenderTarget, IObjRef)</span><span style="color: rgba(0, 128, 128, 1)">4</span><span style="color: rgba(0, 0, 0, 1)">{</span><span style="color: rgba(0, 128, 128, 1)">5</span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">...</span><span style="color: rgba(0, 128, 128, 1)">6</span><span style="color: rgba(0, 0, 0, 1)">    STDMETHOD_(HRESULT, SelectObject)</span><span style="color: rgba(0, 128, 128, 1)">7</span>     (THIS_ IRenderObj * pObj, IRenderObj * *<span style="color: rgba(0, 0, 0, 1)">ppOldObj<span style="color: rgba(255, 0, 0, 1)">DEF_VAL(NULL)</span>) PURE;</span><span style="color: rgba(0, 128, 128, 1)">8</span><span style="color: rgba(0, 128, 0, 1)">//</span><span style="color: rgba(0, 128, 0, 1)">...</span><span style="color: rgba(0, 128, 128, 1)">9</span> };</pre> </div> <p>通过这样修改，经过测试，可以解决我的问题。</p> 			                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-99915.htm">动物疫苗属于疫苗分类吗为什么没有营养（动物疫苗包括哪些）</a></p>
+                                        <p>下一个：<a href="/news/article-100657.htm">开个宠物店大概需要多少钱加盟宠物店需要多少%c（开一个宠物店需要什么条件）</a></p>
+                                    </div>
+                                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-74753.htm" title="狗粮加工设备及配方赚钱吗（狗粮加工厂需要投资多少钱）">狗粮加工设备及配方赚钱吗（狗粮加工厂需要投资多少钱）</a></li>
+                        <li class="py-2"><a href="/news/article-82983.htm" title="瑞鹏宠物医院有限公司电话（瑞鹏宠物医院有限公司电话号码）">瑞鹏宠物医院有限公司电话（瑞鹏宠物医院有限公司电话号码）</a></li>
+                        <li class="py-2"><a href="/news/article-68177.htm" title="养猫咪的人会得什么病（养猫会有病吗）">养猫咪的人会得什么病（养猫会有病吗）</a></li>
+                        <li class="py-2"><a href="/news/article-77456.htm" title="免费领养宠物真的假的啊知乎（免费领养宠物的小程序）">免费领养宠物真的假的啊知乎（免费领养宠物的小程序）</a></li>
+                        <li class="py-2"><a href="/news/article-72075.htm" title="动物活疫苗与死疫苗的区别在哪（动物灭活疫苗）">动物活疫苗与死疫苗的区别在哪（动物灭活疫苗）</a></li>
+                        <li class="py-2"><a href="/news/article-95462.htm" title="Azure DevOps通过流水线完成Docker镜像的部署">Azure DevOps通过流水线完成Docker镜像的部署</a></li>
+                        <li class="py-2"><a href="/news/article-85862.htm" title="聊城宠物店开门了吗今天（聊城市宠物店）">聊城宠物店开门了吗今天（聊城市宠物店）</a></li>
+                        <li class="py-2"><a href="/news/article-79514.htm" title="动物疫苗审批流程（动物疫苗审批流程表）">动物疫苗审批流程（动物疫苗审批流程表）</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-5-free-v2ray-subscribe.htm" title="2025年最佳VPN | 3月5日22.4M/S|免费Shadowrocket/V2ray/SSR/Clash免费节点订阅分享">2025年最佳VPN | 3月5日22.4M/S|免费Shadowrocket/V2ray/SSR/Clash免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/news/article-69459.htm" title="安安宠物医院有限公司（安安宠物医院官网）">安安宠物医院有限公司（安安宠物医院官网）</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">65</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">87</span> <a href="/date/2025-03/" title="2025-03 归档">2025-03</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </section><!-- End About Video Section -->
+    </main><!-- End #main -->
+        <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container d-md-flex py-4">
+            <div class="me-md-auto text-center text-md-start">
+                <div class="copyright">
+                                        <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/free-nodes/">免费节点</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                    <a href="/">2025年最佳VPN 节点机场订阅中文站</a> 版权所有 Powered by WordPress
+                </div>
+            </div>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="/assets/website/js/frontend/clash_verge/jquery.min.js"></script>
+    <script src="/assets/website/js/frontend/clash_verge/aos/aos.js"></script>
+    <script src="/assets/website/js/frontend/clash_verge/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/website/js/frontend/clash_verge/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/website/js/frontend/clash_verge/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/assets/website/js/frontend/clash_verge/php-email-form/validate.js"></script>
+    <script src="/assets/website/js/frontend/clash_verge/purecounter/purecounter.js"></script>
+    <script src="/assets/website/js/frontend/clash_verge/swiper/swiper-bundle.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="/assets/website/js/frontend/clash_verge/main.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
