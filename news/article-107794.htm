@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://topvpn2025.github.io/news/article-107794.htm" />
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Vue el-table实现右键菜单功能_vue.js_</title>
+        <meta name="description" content="本文实例为大家分享了Vue el-table实现右键菜单功能的具体代码，供大家参考，具体内容如下 实现的效果如下：  1.el-table和右键菜单视图代码 @row-contextmenu="rig" />
+        <link rel="icon" href="/assets/website/img/clash_verge/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="2025年最佳VPN 节点机场订阅中文站">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://topvpn2025.github.io/news/article-107794.htm" />
+    <meta property="og:site_name" content="2025年最佳VPN 节点机场订阅中文站" />
+    <meta property="og:title" content="Vue el-table实现右键菜单功能_vue.js_" />
+    <meta property="og:image" content="https://topvpn2025.github.io/uploads/20240802-1/be931e3529ae1f739a7fc08b4bc979fd.webp" />
+        <meta property="og:release_date" content="2025-04-30T09:33:11" />
+    <meta property="og:updated_time" content="2025-04-30T09:33:11" />
+        <meta property="og:description" content="本文实例为大家分享了Vue el-table实现右键菜单功能的具体代码，供大家参考，具体内容如下 实现的效果如下：  1.el-table和右键菜单视图代码 @row-contextmenu="rig" />
+        
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Vue el-table实现右键菜单功能_vue.js_">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="/assets/website/js/frontend/clash_verge/aos/aos.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/clash_verge/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/clash_verge/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/clash_verge/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/clash_verge/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/clash_verge/remixicon/remixicon.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/clash_verge/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="/assets/website/css/clash_verge/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CEWZHDSTGV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CEWZHDSTGV');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+                        <a href="/"><span class="logo">2025年最佳VPN</span></a>
+                        
+            <nav id="navbar" class="navbar">
+                <ul>
+                                        <li><a class="nav-link" href="/">首页</a></li>
+                                        <li><a class="nav-link" href="/free-nodes/">免费节点</a></li>
+                                        <li><a class="nav-link" href="/paid-subscribe/">推荐机场</a></li>
+                                        <li><a class="nav-link" href="/news/">新闻资讯</a></li>
+                                        <li><a class="nav-link" href="/client.htm">客户端</a></li>
+                                    </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+        </div>
+    </header><!-- End Header -->
+    <main id="main">
+        <!-- ======= Breadcrumbs ======= -->
+        <section class="breadcrumbs">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h1>Vue el-table实现右键菜单功能_vue.js_</h1>
+                    <ol>
+                        <li><a href="/">首页</a></li>
+                        <li><a href="/news/">新闻资讯</a></li>
+                        <li>正文</li>
+                    </ol>
+                </div>
+            </div>
+        </section><!-- End Breadcrumbs -->
+        <!-- ======= About Video Section ======= -->
+        <section id="about-video" class="about-video">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                                        <input type="hidden" id="share-website-info" data-name="Clash Meta免费节点订阅站" data-url="https://clash-meta.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                      				  				  				<p>本文实例为大家分享了Vue el-table实现右键菜单功能的具体代码，供大家参考，具体内容如下</p> <p>实现的效果如下：</p> <p style="text-align:center"><img decoding="async" alt="" src="http://img.555519.xyz/uploads3/20220415/14381aa5f891b39700a8367dbb479f3d.jpg"></p> <p><strong>1.el-table和右键菜单视图代码</strong></p> <p><code>@row-contextmenu="rightClick"</code>是右键点击事件</p> <p><code>@row-click="clickTableRow"</code>是每行单击事件</p> <div class="ay1code"> <pre class="brush:xhtml;">&lt;el-table      border      :data="connectList"      @row-contextmenu="rightClick"      @row-click="clickTableRow"  &gt;    &lt;el-table-column label="ID" align="center" width="180" prop="id"/&gt;    &lt;el-table-column label="目标" align="center" prop="url" :show-overflow-tooltip="true"/&gt;    &lt;el-table-column label="修改时间" align="center" width="180" sortable prop="updatatime"/&gt;    &lt;el-table-column label="盘符" align="center" width="60" prop="drive"/&gt;  &lt;/el-table&gt;    &lt;!-- 右键菜单 --&gt;  &lt;div id="menu" class="menuDiv"&gt;    &lt;ul class="menuUl"&gt;      &lt;li          v-for="(item, index) in menus"          :key="index"          @click.stop="infoClick(index)"      &gt;        {{ item.name }}      &lt;/li&gt;    &lt;/ul&gt;  &lt;/div&gt;</pre> </div> <p><strong>2.js方法代码</strong></p> <div class="ay1code"> <pre class="brush:js;">data() {   return {      //右键菜单     menus: [       { name: '编辑webshell', operType: 1 },       { name: '删除webshell', operType: 2 },       { name: '虚拟终端', operType: 3 },       { name: '文件管理', operType: 4 }     ]   }  // methods 部分：  // table的右键点击当前行事件  rightClick(row, column, event) {    let menu = document.querySelector("#menu");    //阻止元素发生默认的行为    event.preventDefault();    // 根据事件对象中鼠标点击的位置，进行定位    menu.style.left = event.clientX + 10 + "px";    menu.style.top = event.clientY - 30 + "px";    // 改变自定义菜单的隐藏与显示    menu.style.display = "block";    menu.style.zIndex = 1000;  },   // table的左键点击当前行事件  clickTableRow(row, column, event) {    let menu = document.querySelector("#menu");    menu.style.display = "none";  },  // 自定义菜单的点击事件  infoClick(index) {    if (index === 0) {    // do something    }    let menu = document.querySelector("#menu");    menu.style.display = "none";  },</pre> </div> <p><strong>3.css样式代码</strong></p> <div class="ay1code"> <pre class="brush:css;">.menuDiv {    display: none;    position: absolute;      .menuUl {      height: auto;      width: auto;      font-size: 14px;      text-align: left;      border-radius: 3px;      border: none;      background-color: #c4c4c4;      color: #fff;      list-style: none;      padding: 0 10px;        li {        width: 140px;        height: 35px;        line-height: 35px;        cursor: pointer;        border-bottom: 1px solid rgba(255, 255, 255, 0.47);          &amp;:hover {          // background-color: rgb(26, 117, 158);          color: rgb(54, 138, 175);        }      }    }  }</pre> </div> 			                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-107790.htm">vue项目中数据更新页面不刷新问题</a></p>
+                                        <p>下一个：<a href="/news/article-108622.htm">宠物领养app的商业模式有哪些内容（宠物领养机构靠什么盈利）</a></p>
+                                    </div>
+                                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-87285.htm" title="宠物领养中心在哪里（宠物领养中心官网）">宠物领养中心在哪里（宠物领养中心官网）</a></li>
+                        <li class="py-2"><a href="/news/article-98394.htm" title="宠物医院收费价目表昆明（昆明宠物医院24小时营业）">宠物医院收费价目表昆明（昆明宠物医院24小时营业）</a></li>
+                        <li class="py-2"><a href="/news/article-97668.htm" title="动物接种疫苗产生的免疫力为（动物接种疫苗产生的免疫力为什么低）">动物接种疫苗产生的免疫力为（动物接种疫苗产生的免疫力为什么低）</a></li>
+                        <li class="py-2"><a href="/news/article-105273.htm" title="中国兽药十大名牌厂家排名100强名单 中国兽药十大名牌厂家排名100强名单图片">中国兽药十大名牌厂家排名100强名单 中国兽药十大名牌厂家排名100强名单图片</a></li>
+                        <li class="py-2"><a href="/news/article-86564.htm" title="Redis 缓存的三大问题及其解决方案">Redis 缓存的三大问题及其解决方案</a></li>
+                        <li class="py-2"><a href="/news/article-99121.htm" title="包含初中学历能考什么证书可以挂靠的的词条">包含初中学历能考什么证书可以挂靠的的词条</a></li>
+                        <li class="py-2"><a href="/news/article-100657.htm" title="开个宠物店大概需要多少钱加盟宠物店需要多少%c（开一个宠物店需要什么条件）">开个宠物店大概需要多少钱加盟宠物店需要多少%c（开一个宠物店需要什么条件）</a></li>
+                        <li class="py-2"><a href="/news/article-86565.htm" title="Kotlin中的扩展函数（静态分派）">Kotlin中的扩展函数（静态分派）</a></li>
+                        <li class="py-2"><a href="/news/article-102855.htm" title="宠物猫狗批发市场（宠物猫批发价）">宠物猫狗批发市场（宠物猫批发价）</a></li>
+                        <li class="py-2"><a href="/news/article-88011.htm" title="猫为什么要打了疫苗才可以洗澡（猫为什么打了疫苗才能洗澡）">猫为什么要打了疫苗才可以洗澡（猫为什么打了疫苗才能洗澡）</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">3</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">86</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </section><!-- End About Video Section -->
+    </main><!-- End #main -->
+        <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container d-md-flex py-4">
+            <div class="me-md-auto text-center text-md-start">
+                <div class="copyright">
+                                        <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/free-nodes/">免费节点</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                    <a href="/">2025年最佳VPN 节点机场订阅中文站</a> 版权所有 Powered by WordPress
+                </div>
+            </div>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="/assets/website/js/frontend/clash_verge/jquery.min.js"></script>
+    <script src="/assets/website/js/frontend/clash_verge/aos/aos.js"></script>
+    <script src="/assets/website/js/frontend/clash_verge/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/website/js/frontend/clash_verge/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/website/js/frontend/clash_verge/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/assets/website/js/frontend/clash_verge/php-email-form/validate.js"></script>
+    <script src="/assets/website/js/frontend/clash_verge/purecounter/purecounter.js"></script>
+    <script src="/assets/website/js/frontend/clash_verge/swiper/swiper-bundle.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="/assets/website/js/frontend/clash_verge/main.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
